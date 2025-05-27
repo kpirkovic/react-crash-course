@@ -7,6 +7,7 @@ import {
 import Home from './pages/Home';
 import Jobs from "./pages/Jobs";
 import AddJob from "./pages/AddJob";
+import EditJobPage from "./pages/EditJobPage";
 import MainLayout from "./layouts/MainLayout";
 import NotFound from "./pages/NotFound";
 import JobPageSingular, {jobLoader} from "./pages/JobPageSingular";
@@ -43,6 +44,11 @@ const App = () => {
         <Route
           path="/jobs/:id"
           element={<JobPageSingular deleteJob={deleteJob} />}
+          loader={jobLoader}
+        />
+        <Route
+          path="/edit-job/:id"
+          element={<EditJobPage />}
           loader={jobLoader}
         />
         <Route path="*" element={<NotFound />} />
