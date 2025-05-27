@@ -1,6 +1,6 @@
 import JobListings from "../components/JobListings"
 
-export const Jobs = () => {
+const Jobs = () => {
   return (
     <>
       {/* <!-- Filter Jobs --> */}
@@ -25,3 +25,5 @@ export const Jobs = () => {
     </>
   );
 }
+
+export default Jobs;
