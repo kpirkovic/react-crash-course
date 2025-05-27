@@ -14,12 +14,21 @@ import JobPageSingular, {jobLoader} from "./pages/JobPageSingular";
 const App = () => {
   /* Add New Job */
   const addJob = async (newJob) => {
-    const res = await fetch('/api/jobs/', {
-      method: 'POST',
+    const res = await fetch("/api/jobs/", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(newJob)
+      body: JSON.stringify(newJob),
+    });
+
+    return;
+  };
+
+  /* Delete Job */
+  const deleteJob = async (id) => {
+    const res = await fetch(`/api/jobs/${id}`, {
+      method: "DELETE",
     });
 
     return;
@@ -33,7 +42,7 @@ const App = () => {
         <Route path="/add-job" element={<AddJob addJobSubmit={addJob} />} />
         <Route
           path="/jobs/:id"
-          element={<JobPageSingular />}
+          element={<JobPageSingular deleteJob={deleteJob} />}
           loader={jobLoader}
         />
         <Route path="*" element={<NotFound />} />
@@ -41,7 +50,7 @@ const App = () => {
     )
   );
 
-  return <RouterProvider index router={router}/>
+  return <RouterProvider index router={router} />;
 };
 
 export default App;
