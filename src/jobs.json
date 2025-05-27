@@ -83,6 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
+    },
+    {
+      "id": "f717",
+      "title": "React Dev in Macedonia",
+      "type": "Remote",
+      "location": "Macedonia",
+      "description": "Better Ranking is a UK-based SEO and digital marketing agency specializing in search engine optimization, particularly for e-commerce and Shopify platforms. With over a decade of experience, they offer tailored strategies focusing on ROI, transparency, and measurable results. Their services include technical SEO audits, content optimization, and link-building campaigns. Notably, their case studies highlight significant traffic increases for clients, such as a 112% boost for NitNot and a 253% increase for 3D Broadcast within two months.  ￼ ￼\n",
+      "salary": "Under $50K",
+      "company": {
+        "name": "PirkoCreative",
+        "description": "Better Ranking is a UK-based SEO and digital marketing agency specializing in search engine optimization, particularly for e-commerce and Shopify platforms. With over a decade of experience, they offer tailored strategies focusing on ROI, transparency, and measurable results. Their services include technical SEO audits, content optimization, and link-building campaigns. Notably, their case studies highlight significant traffic increases for clients, such as a 112% boost for NitNot and a 253% increase for 3D Broadcast within two months.  ￼ ￼\n",
+        "contactEmail": "kristijanpirkovic@gmail.com",
+        "contactPhone": "077971992"
+      }
     }
   ]
 }
