@@ -5,7 +5,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/Home';
-import { Jobs } from "./pages/Jobs";
+import Jobs from "./pages/Jobs";
+import AddJob from "./pages/AddJob";
 import MainLayout from "./layouts/MainLayout";
 import NotFound from "./pages/NotFound";
 import JobPageSingular, {jobLoader} from "./pages/JobPageSingular";
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<MainLayout/>}>
       <Route index element={<Home />} />
       <Route path="/jobs" element={<Jobs />} />
+      <Route path="/add-job" element={<AddJob />} />
       <Route path="/jobs/:id" element={<JobPageSingular />} loader={jobLoader} />
       <Route path="*" element={<NotFound />} />
     </Route>
